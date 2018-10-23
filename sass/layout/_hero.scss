@@ -1,0 +1,59 @@
+.hero {
+    margin: 0 auto;
+    width: 100%;
+    height: 68rem;
+    background-image:url(../img/fitnwomen1-black-1.jpg);
+    background-position: top center;
+    background-size: cover;
+    
+    @include respond(tab-land) {
+        height: 60rem;
+
+    }
+
+&__intro {
+    margin: 0 auto;
+    max-width: 114rem;
+       color: $color-white;
+         text-align: right;
+        padding: 18rem 0;
+
+           @include respond(tab-land) {
+              padding:12% 5%;
+              text-align: center;
+            
+           }
+
+    &--h1 {
+        font-family: 'Montserrat', Lato, Arial, sans-serif;
+        font-size: 6rem;
+        font-weight: 700;
+        line-height: 10rem;
+        text-transform: uppercase;
+
+@include respond(tab-port) {
+    padding-top: 4.5rem;
+    font-size: 5rem;
+    font-weight: 500;
+    line-height: 6rem;
+   
+}
+
+        @include respond(phone) {
+            padding-top: 4.5rem;
+             font-size: 4rem;
+                           font-weight: 500;
+              line-height: 6rem;
+
+        }
+
+    }
+   p{
+        font-size: 3rem;
+        font-weight: 300;
+        padding-top: 2rem;
+    }
+
+}
+
+}

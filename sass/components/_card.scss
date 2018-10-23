@@ -1,0 +1,107 @@
+.feature {
+  width: 33%;
+  height: 25rem;
+  display: block;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+
+  @include respond(tab-land) {
+    width: 100%;
+  }
+
+  &--1 {
+    background: linear-gradient(0deg, rgba(45, 98, 253, 0.7) 35%,rgba(160, 63, 251, 0.7) 100%),
+      url("../img/timthumb.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  &--2 {
+    background: linear-gradient(
+        185deg,
+        rgba(252, 70, 107, 0.7) 35%,
+        rgba(255, 130, 0, 0.8) 100%
+      ),
+      url("../img/two-card.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  &--3 {
+    background: linear-gradient(
+        185deg,
+        rgba(70, 194, 252, 0.8) 35%,
+        rgba(0, 140, 255, 0.7) 100%
+      ),
+      url("../img/body_building2.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  &:hover {
+    transform: translateY(-0.5rem) scale(1.05);
+    box-shadow: 0 1rem 4rem 0 rgba($color-black, 0.5);
+
+    z-index: 999;
+  }
+
+  &__label {
+    position: absolute;
+    top: 9rem;
+    right: 0px;
+    text-align: center;
+    font-weight: 700;
+    background: #fff;
+    display: inline-block;
+    font-size: 1.6rem;
+    border-radius: 10rem 0 0 10rem;
+    width: 9rem;
+    line-height: 6rem;
+    height: 6rem;
+
+    @include respond(tab-port) {
+      font-size: 2rem;
+      width: 10rem;
+    }
+
+    span {
+      width: 20rem;
+      height: 20rem;
+    }
+
+    &--label-1 {
+      color: rgba(45, 63, 253, 0.7);
+    }
+    &--label-2 {
+      color: rgba(252, 70, 107, 0.7);
+    }
+    &--label-3 {
+      color: rgba(70, 194, 252, 0.8);
+    }
+  }
+
+  &__text {
+    padding: 8%;
+    color: #fff;
+    margin-right: 30%;
+
+    @include respond(tab-land) {
+      padding: 4% 5%;
+    }
+    h1 {
+      font-size: 4rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      padding-bottom: 1rem;
+    }
+
+    p {
+      opacity: 0.7;
+      font-size: 1.7rem;
+      line-height: 2.3rem;
+
+      @include respond(tab-port) {
+        font-size: 2rem;
+        line-height: 2.5rem;
+      }
+    }
+  }
+}

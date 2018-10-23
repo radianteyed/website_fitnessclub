@@ -1,0 +1,165 @@
+.footer {
+
+    background-color: $color-black;
+padding-top: 4rem;
+    &__container {
+
+        padding: 3rem 0;
+        max-width: 114rem;
+        margin: 0 auto;
+
+
+
+
+    }
+
+    &__menu {
+        color: $color-white;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        font-weight: 300;
+        display: flex;
+        justify-content: space-around;
+        letter-spacing: 0.1rem;
+
+
+        @include respond(tab-port) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+        }
+
+
+        &--name {
+            color: $color-primary;
+            font-weight: 700;
+            padding-bottom: 1.5rem;
+
+            @include respond(tab-port) {
+                padding-top: 3rem;
+
+            }
+
+        }
+
+        &__ul ul {
+            width: 100%;
+            padding-bottom: 5rem;
+            margin-left: 0;
+            list-style: none;
+
+        }
+
+
+
+    }
+
+    &-end-text {
+
+        &--info {
+            margin-left: auto;
+
+             @include respond(phone) {
+                margin:0;
+
+             }
+        }
+
+        max-width: 114rem;
+        color: $color-white;
+        font-size: 1.5rem;
+        font-weight: 300;
+        border-top: 1px solid rgba($color-white, 0.1);
+        margin: 4rem 3rem;
+        letter-spacing: 0.1rem;
+
+        ul {
+            display: flex;
+            list-style: none;
+
+             @include respond(phone) {
+                 flex-direction: column;
+                 text-align: center;
+                 
+                
+             }
+
+           
+
+            li a {
+                text-decoration: none;
+                color: $color-white;
+                display: inline-block;
+                padding: 1rem;
+
+                
+
+                    &:hover,
+                    &:active {
+                    border-bottom: 2px solid $color-primary;
+                    }
+              
+                    
+
+            }
+
+           
+        }
+    }
+}
+
+
+
+
+
+
+    form {
+        width: 40rem;
+
+        @include respond(phone) {
+            width: 100%;
+        }
+
+
+        label {
+            font-size: 1.5rem;
+            letter-spacing: 0.1rem;
+            color: rgba($color-white, 0.5);
+            opacity: 1;
+            transform: translateY(0);
+            transition: all 0.2s ease-out;
+
+
+
+
+        }
+
+        input {
+
+            width: 100%;
+            font-family: Lato, Arial, sans-serif;
+            background: none;
+            border: none;
+            border-bottom: 1px solid $color-white;
+            color: $color-white;
+            font-size: 1.8rem;
+            font-weight: 400;
+            letter-spacing: 0.1rem;
+            margin: 0 0 1rem 0;
+            padding: 0 0 1rem 0;
+
+            transition: all 0.3s;
+
+            &:focus {
+                outline: none;
+                padding: 0 0 0.875em 0;
+            }
+        }
+
+        input:placeholder-shown+label {
+            opacity: 0;
+            transform: translateY(1rem);
+        }
+    }

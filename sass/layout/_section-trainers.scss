@@ -1,0 +1,100 @@
+.section-trainers {
+
+    &--p {
+        font-size: 1.9rem;
+        line-height: 3rem;
+        text-align: center;
+         padding: 2rem;
+    }
+
+
+}
+
+.container {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4rem 0;
+
+    @include respond(tab-port) {}
+
+
+
+    &__col {
+        width: 25%;
+        height: auto;
+        
+
+
+       
+        &--2 {
+            background: $color-dark;
+
+        }
+ &--1,
+        &--3 {
+            background: $color-white;
+        }
+         &--4 {
+              background: $color-primary;
+         }
+
+
+        @include respond(tab-port) {
+            width: 50%;
+
+        }
+
+          @include respond(phone) {
+              width: 100%;
+
+          }
+
+
+
+
+        img {
+            width: 100%;
+            vertical-align: middle;
+        }
+
+        &__text {
+            padding: 15%;
+            letter-spacing: 0.1rem;
+            color: $color-black;
+
+            @include respond(tab-land) {
+                padding: 5%;
+              
+            }
+
+
+        }
+
+        h4 {
+             color: $color-black;
+            font-family: 'Montserrat',         sans-serif;
+            padding-bottom: 5%;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 3.5rem;
+
+        }
+
+        P {
+            font-size: 2rem;
+            padding: 1rem 0;
+            font-weight: 500;
+            line-height: 3rem;
+
+            @include respond(tab-land) {
+
+                font-size: 1.6rem;
+                line-height: 2.2rem;
+
+
+            }
+
+        }
+    }
+}

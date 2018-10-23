@@ -1,0 +1,774 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&amp;subset=latin-ext" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Fitness club</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.4.1/js/all.js" integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7"
+        crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+
+
+    <header>
+
+        <nav class="navbar">
+
+            <a href="index.html" class="navbar__brand">
+                <img src="img/logo-fitness_white.png" alt="Logo-fitness-club">
+
+
+            </a>
+
+            <ul class="navbar__list--hidden " id="NavBurger">
+                <li class="navbar__list--item"><a href="news.html"> Aktualności</a> </li>
+
+                <li class="navbar__list--item"><a href="#"> Cennik</a> </li>
+
+                <li class="navbar__list--item"><a href="#"> Kontakt</a> </li>
+
+
+
+            </ul>
+
+
+            <ul class="navbar__list">
+                <li class="navbar__list--item"><a href="news.html"> Aktualności</a> </li>
+                <li class="navbar__list--item"><a href="#"> Cennik</a> </li>
+                <li class="navbar__list--item"><a href="#"> Kontakt</a> </li>
+
+
+
+            </ul>
+
+
+
+            <a href="#" class="navbar__toggle" onclick="toggleNav('NavBurger')">
+                <i class="fas fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+
+
+
+    <div class="hero">
+        <div class="hero__intro">
+            <h1 class="hero__intro--h1">Darmowe warsztaty <br />treningowe na siłowni</h1>
+            <p>Każdy wtorek i czwartek o 16:30</p>
+            <p class="hero__intro--p">
+                <a class="btn" href="#" role="button">Dowiedz się więcej</a>
+            </p>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <main>
+
+        <section class="section-cards" id="section-cards">
+
+            <div class="feature feature--1" onclick="location.href='#popup'">
+                <div class="feature__text">
+
+                    <h1>Open </h1>
+                    <p>Karnet sportowy bez ograniczeń na&nbsp;30&nbsp;dni </p>
+
+                </div>
+                <span class="feature__label feature__label--label-1"> 99 zł </span>
+            </div>
+
+            <div class="feature  feature--2" onclick="location.href='#popup'">
+                <div class="feature__text">
+                    <h1>HALF&nbsp;OPEN </h1>
+                    <p>Karnet sportowy bez ograniczeń na&nbsp;30&nbsp;dni </p>
+                </div>
+                <span class="feature__label feature__label--label-2"> 69 zł </span>
+            </div>
+
+            <div class="feature  feature--3" onclick="location.href='#popup'">
+                <div class="feature__text">
+                    <h1>FIT&nbsp;PLUS&nbsp;365 </h1>
+                    <p>Karnet sportowy na&nbsp;12&nbsp;miesięcy. Prywatna opieka medyczna gratis przez cały okres</p>
+                </div>
+                <span class="feature__label feature__label--label-3"> 459 zł </span>
+            </div>
+
+        </section>
+
+
+
+
+        <section class="section__about">
+
+
+
+
+
+
+
+
+            <h1 class="section-h1">Nasze kluby, <br> Twoje miejsce na fitness</h1>
+
+
+            <div class="section__elements">
+
+                <div class="section__elements__item">
+                    <img src="img/jump-rope-with-a-timer.svg" alt="Icon" class="section__elements__item--img">
+                    <h3>Fitness</h3>
+                    <p>Formy wzmacnające typu TBC, M5X, Deep Pilates</p>
+                </div>
+
+                <div class="section__elements__item">
+
+                    <img src="img/heart.svg" alt="Icon" class="section__elements__item--img">
+                    <h3>Cardio</h3>
+                    <p>Tabata, Cross trening, Trampoliny, Indoor cycling</p>
+                </div>
+
+
+
+                <div class="section__elements__item ">
+                    <img src="img/dumbbell (1).svg" alt="Icon" class="section__elements__item--img">
+                    <h3>Siłownia</h3>
+                    <p>Strefa wolnych ciężarów, Strefa maszyn, Strefa cardio</p>
+                </div>
+
+                <div class="section__elements__item">
+                    <img src="img/saw-posture.svg" alt="Icon" class="section__elements__item--img">
+                    <h3>Body and Mind</h3>
+                    <p>Joga, Zdrowy kręgosłup, Pilates, Streching, Strefa treningu personalnego</p>
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+
+            <div class="section__about--hidden">
+                <div class="section__about--hidden-text">
+                    <h1>Program<br>lojalnościowy</h1>
+                    <a class="btn" href="#" role="button">Dołącz już dziś</a>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
+        <section class="section-buy">
+            <div class="section-buy--text">
+                <h3>Wybierz najlepszą ofertę dla siebie</h3>
+                <div> <a class="btn btn--right" href="#" role="button">Kup Karnet</a></div>
+
+            </div>
+        </section>
+
+
+
+
+
+        <section class="section-schedule">
+
+            <h1 class="section-h1">Grafik zajęć</h1>
+
+            <div class="table">
+
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <td>
+                                Poniedziałek
+                            </td>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr class="core-blast">
+
+                            <td>
+                                <span>Core Blast</span>
+                                8.00-9.00
+                            </td>
+                        </tr>
+
+                        <tr class="sprint">
+
+                            <td>
+                                <span>Sprint</span>
+                                9.00-10.00
+                            </td>
+                        </tr>
+
+
+                        <tr class="pilates">
+
+                            <td>
+                                <span> Pilates </span>
+                                15.00-16.00
+                            </td>
+                        </tr>
+                        <tr class="zumba">
+
+                            <td>
+                                <span>Zumba</span>
+                                16.00-17.00
+                            </td>
+                        </tr>
+                        <tr class="abt">
+
+                            <td>
+                                <span>ABT</span>
+                                18.00-19.00
+                            </td>
+                        </tr>
+                        <tr class="empty">
+
+                            <td>
+                                &nbsp;
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+
+
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <td>
+                                Wtorek
+                            </td>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr class="pilates">
+
+                            <td>
+                                <span>Pilates</span>
+                                8.00-9.00
+                            </td>
+                        </tr>
+
+                        <tr class="empty">
+
+                            <td>
+                                &nbsp;
+                            </td>
+                        </tr>
+
+                        <tr class="sprint">
+
+                            <td>
+                                <span>Sprint</span>
+                                15.00-16.00
+                            </td>
+                        </tr>
+
+                        <tr class="pilates">
+
+                            <td>
+                                <span>Pilates</span>
+                                16.00-17.00
+                            </td>
+                        </tr>
+
+                        <tr class="zumba">
+
+                            <td>
+                                <span>Zumba</span>
+                                18.00-19.00
+                            </td>
+                        </tr>
+                        <tr class="sprint">
+
+                            <td>
+                                <span>Sprint</span>
+
+                                19.00-20.00
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <td>
+                                Środa
+                            </td>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr class="empty">
+
+                            <td>
+                                &nbsp;
+                               
+                            </td>
+                        </tr>
+
+                        <tr class="pilates">
+
+                            <td>
+                                <span>Pilates</span>
+                                9.00-10.00
+                            </td>
+                        </tr>
+                        <tr class="empty">
+                        
+                            <td>
+                                &nbsp;
+                        
+                            </td>
+                        </tr>
+
+                        <tr class="sprint">
+
+                            <td>
+                                <span>Sprin</span>
+                                16.00-17.00
+                            </td>
+                        </tr>
+
+                       
+
+                        <tr class="abt">
+
+                            <td>
+                                <span>ABT</span>
+                                18.00-19.00
+                            </td>
+                        </tr>
+                        <tr class="zumba">
+
+                            <td>
+                                <span>Zumba</span>
+
+                                19.00-20.00
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <td>
+                                Czwartek
+                            </td>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr class="core-blast">
+
+                            <td>
+                                <span>Core-blast</span>
+                                8.00-9.00
+                            </td>
+                        </tr>
+
+                        <tr class="zumba">
+
+                            <td>
+                                <span>Zumba</span>
+                                9.00-10.00
+                               
+                            </td>
+                        </tr>
+
+                        <tr class="empty">
+
+                            <td>
+                                 &nbsp;
+                            </td>
+                        </tr>
+
+                        <tr class="pilates">
+
+                            <td>
+                                <span>Pilates</span>
+                                16.00-17.00
+                            </td>
+                        </tr>
+
+                        <tr class="zumba">
+
+                            <td>
+                                <span>Zumba</span>
+                                17.00-18.00
+                            </td>
+                        </tr>
+                        <tr class="empty">
+
+                            <td>
+                            &nbsp;
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <table>
+
+                    <thead>
+                        <tr>
+                            <td>
+                                Piątek
+                            </td>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr class="pilates">
+
+                            <td>
+                                <span>Pilates</span>
+                                8.00-9.00
+                            </td>
+                        </tr>
+
+                        <tr class="empty">
+
+                            <td>
+                                &nbsp;
+                            </td>
+                        </tr>
+
+                        <tr class="sprint">
+
+                            <td>
+                                <span>Sprint</span>
+                                15.00-16.00
+                            </td>
+                        </tr>
+
+                        <tr class="pilates">
+
+                            <td>
+                               <span> Pilates</span>
+                                16.00-17.00
+                            </td>
+                        </tr>
+
+                        <tr class="zumba">
+
+                            <td>
+                                <span>Zumba</span>
+                                18.00-19.00
+                            </td>
+                        </tr>
+                        <tr class="sprint">
+
+                            <td>
+                                <span>Sprint</span>
+
+                                19.00-20.00
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </section>
+
+        <section class="section-trainers">
+
+
+            <h1 class="section-h1">Znajdź trenera</h1>
+            <p class="section-trainers--p">Oto najlepsi polscy trenerzy
+                fitness. Z kim
+                ćwiczyć? <br>Którego trenera wybrać? Poznaj największe gwiazdy fitness w Polsce!</p>
+
+            <div class="container">
+
+                <div class="container__col container__col--1">
+                    <div class="container__col__text">
+                        <p>Trennig ABT</p>
+                        <h4>Konrad Swinka</h4>
+                        <p>Posiada wiedzę z różnych dyscyplin sportowych do prowadzenia treningów.</p>
+                    </div>
+
+                </div>
+
+                <div class="container__col">
+                    <img src="img/TRAINERS3.png" alt="Card image">
+
+                </div>
+                <div class="container__col container__col--2">
+                    <div class=" container__col__text">
+                        <p>Crossfit</p>
+                        <h4>Anna Inna</h4>
+                        <p>Posiada wiedzę z różnych dyscyplin sportowych do prowadzenia treningów.</p>
+                    </div>
+
+                </div>
+                <div class="container__col">
+                    <img src="img/TRAINERS2.png" alt="Card image">
+
+                </div>
+
+                <div class="container__col">
+                    <img src="img/TRAINERS5.png" alt="Card image">
+
+                </div>
+                <div class="container__col container__col--3">
+                    <div class="container__col__text">
+                        <p>GT</p>
+                        <h4>Anna Rękoś</h4>
+                        <p>Posiada wiedzę z różnych dyscyplin sportowych do prowadzenia treningów.</p>
+                    </div>
+
+                </div>
+
+
+
+
+
+                <div class="container__col">
+                    <img src="img/TRAINERS4.png" alt="Card image">
+
+                </div>
+
+
+
+                <div class="container__col container__col--4">
+                    <div class=" container__col__text">
+                        <p>Trennig ABT</p>
+                        <h4>Agata John</h4>
+                        <p>Posiada wiedzę z różnych dyscyplin sportowych do prowadzenia treningów.</p>
+                    </div>
+
+                </div>
+
+
+
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+        <section id="section-map">
+            <h1 class="section-h1">Twój czas, Twoje miejsce</h1>
+
+
+
+
+
+            <iframe class="section-map__map" id="map-container" frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.763174257016!2d19.921605615840694!3d50.07199672244241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165ba8e0323bcd%3A0x6c07af86ac8afe71!2sKazimierza+Wielkiego+3%2C+30-074+Krak%C3%B3w!5e0!3m2!1sru!2spl!4v1539860128373">
+            </iframe>
+
+
+
+
+
+        </section>
+    </main>
+
+
+
+    <footer class="footer">
+
+        <div class="footer__container">
+
+
+
+            <div class="footer__menu">
+
+                <div class="footer__menu__ul">
+
+                    <ul>
+                        <li class="footer__menu--name">BIURO OBSŁUGI KLIENTA</li>
+                        <li>tel.: 12 312 00 00</li>
+                        <li>bok@fitness.pl</li>
+                        <li>Pon. - Pt. 8:00-18:00</li>
+
+
+                    </ul>
+                </div>
+
+                <div class="footer__menu__ul">
+
+                    <ul>
+                        <li class="footer__menu--name">Zajęcia</li>
+                        <li>ABT</li>
+                        <li>Fittcross</li>
+                        <li>JT</li>
+                        <li>Rowery</li>
+                        <li>Les Mills</li>
+                        <li>Yoga</li>
+
+
+                    </ul>
+                </div>
+
+
+                <div class="footer__menu__ul">
+                    <!-- <p class="footer__menu--name">ZAPISZ SIĘ DO NEWSLETTERA</p> -->
+
+                    <!-- <input type="text " class="form-control " placeholder="Email "> -->
+
+
+                    <form>
+
+                        <div>
+
+                            <input type="text" id="dynamic-label-input" placeholder="Zapisz się do newslettera">
+                            <label for="dynamic-label-input">Email</label>
+
+                        </div>
+                        <button type="submit" id="newsletter" class="btn btn--big">Zapisz
+                            mnie!
+                        </button>
+
+                    </form>
+
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="footer-end-text">
+
+
+                <ul>
+                    <li>
+                        <a href="#">Aktualności</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Cennik</a>
+                    </li>
+                    <li>
+                        <a href="#">Kontact</a>
+                    </li>
+                    <li>
+                    <li class="footer-end-text--info"><a href="#">&copy; 2018 Oksana Syvorotka</a></li>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+    </footer>
+
+
+
+
+
+    <div class="popup" id="popup">
+        <div class="popup__container">
+
+
+            <div class="popup__img">
+
+                <img src="img/pop1.jpg" alt="Photo men">
+            </div>
+
+            <div class="popup__text">
+
+                <a href="#section-cards" class="popup__close">&times;</a>
+                <h2>
+                    Karnet sportowy bez ograniczeń
+                </h2>
+                <p>
+                    &#9755 &nbsp;Brak opłaty wpisowej <br>
+                    &#9755 &nbsp; Swoboda rezygnacji do 14 dni <br>
+                    &#9755&nbsp; Możliwość bezpłatnego zamrożenia karnetu <br> <br>
+                    *Jeżeli nie uda Ci się wykorzystać wszystkich wykupionych zajęć w ciągu 30 dni, możesz przedłużyć
+                    ważność swojego
+                    karnetu o 14 dni.
+                </p>
+                <a class="btn" href="#" role="button">Dowiedz się więcej</a>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/menu.js"></script>
+</body>
+
+</html>

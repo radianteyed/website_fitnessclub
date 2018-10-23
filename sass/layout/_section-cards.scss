@@ -1,0 +1,14 @@
+.section-cards {
+    max-width: 114rem;
+    margin: 0 auto;
+    display: flex;
+    margin-top: -3rem;
+    position: relative;
+  
+  @include respond(tab-port) {
+
+    flex-direction: column;
+   
+  }
+
+}

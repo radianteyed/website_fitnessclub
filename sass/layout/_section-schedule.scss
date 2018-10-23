@@ -1,0 +1,92 @@
+.section-schedule {
+  max-width: 114rem;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.table {
+  max-width: 114rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  @include respond(tab-port) {
+    flex-direction: row;
+  }
+}
+
+table {
+  margin-bottom: 2rem;
+  border-collapse: collapse;
+  text-align: center;
+  vertical-align: center;
+  width: 20%;
+
+   @include respond(tab-port) {
+       
+        margin: 0 auto;
+        }
+
+  thead td {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+     @include respond(tab-port) {
+      padding-top: 4rem;
+        }
+  }
+
+  td {
+    font-size: 1.5rem;
+    border-collapse: collapse;
+    width: 20%;
+    height: 20rem;
+    cursor: pointer;
+    
+        @include respond(tab-port) {
+        width: 70vw;
+        display:block;
+        height: 10rem;
+        padding-top: 2rem;
+        }
+
+         &:hover {
+    background: rgba(0, 140, 255, 0.7);
+    color:$color-white;
+    
+    transition: all .2s;
+  }
+
+  }
+
+  span {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .empty {
+    // background: #eaeeee;
+  }
+
+  .pilates {
+    background: $color-primary;
+  }
+
+  .sprint {
+    background: $color-blue;
+  }
+  .core-blast {
+    background: $color-white;
+  }
+
+  .zumba {
+    background: $color-dark;
+  }
+  .abt {
+      background: #e0e4e4;
+
+  }
+}
